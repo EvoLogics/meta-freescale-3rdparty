@@ -9,7 +9,6 @@ LICENSE = "GPLv2"
 PROVIDES = "virtual/kernel"
 
 require recipes-kernel/linux/linux-imx.inc
-require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
