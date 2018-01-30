@@ -1,16 +1,16 @@
 # Common definitions for cfa-10036 boards
 
+MACHINEOVERRIDES =. "mxs:mx28:cfa10036:"
+
 include conf/machine/include/imx-base.inc
 include conf/machine/include/tune-arm926ejs.inc
-
-SOC_FAMILY = "mxs:mx28:cfa10036"
 
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-cfa"
 PREFERRED_PROVIDER_virtual/bootloader ?= "barebox"
 
 IMAGE_BOOTLOADER = "barebox"
 BAREBOX_BINARY = "barebox"
-IMAGE_FSTYPES_mxs = "tar.bz2 barebox.mxsboot-sdcard sdcard.gz"
+IMAGE_FSTYPES_mxs = "tar.bz2 barebox-mxsboot-sdcard sdcard.gz"
 
 IMXBOOTLETS_MACHINE = "cfa10036"
 
